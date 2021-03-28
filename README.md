@@ -2,11 +2,32 @@
 
 ## Linear Regression to Predict MPG
 Short summary....
-Coeffieciants
+Coefficients
 ![linearR1](path)
 Coefficients and Significance codes
 ![linearR2](path)
 
-* When we take a look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle_length, and ground_clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
-* The slope of our multiple linear regression model connot be considered zero. The reason being is that our p-value which is 5.35e-11 is alot smaller than our preset significance level of 0.05%. Therefore the null hypothesis is rejected which means that the slope of our linear regession model is not zero.
-*  The multiple linear regression that we created does show us that relationships between mpg and a few of the variables do exist. Since the null was rejected for these stats, that means there is a correlation. I believe this linear regression model can act as way to predict mpg in relation to ground clearance and vehicle length. Those two variables can be modified in an effort to improve the mpg stats.
+•	When we look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle length, and ground clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
+•	The slope of our multiple linear regression model cannot be considered zero. The reason being is that our p-value which is 5.35e-11 is a lot smaller than our preset significance level of 0.05%. Therefore, the null hypothesis is rejected which means that the slope of our linear regression model is not zero.
+•	The multiple linear regression that we created does show us that relationships between mpg and a few of the variables do exist. Since the null was rejected for these stats, that means there is a correlation. I believe this linear regression model can act as way to predict mpg in relation to ground clearance and vehicle length. Those two variables can be modified to improve the mpg stats.
+
+## Summary Statistics on Suspension Coils
+
+![total_summary](path)
+
+![lot_summary](path)
+
+* According to the Lot summary table that we have created there is one lot that that has not maintained the same level of consistency that has been dictated by our manufacturing plant. If we look at Lot 3, the variance is 170.3. The max alloawance for variance is 100. While something will been to be done to address the issue, the overall statistics (including all manufacturing lots) is well within the dictated guidelines.
+
+## T-Test on Suspension Coils
+
+![Population](path)
+![Lot1](path)
+![Lot2](path)
+![Lot3](path)
+
+Looking at all 4 p-values from each lot and the population it is simple to distinguish the outlier from out One Sample t-test.
+
+* From the Population t-test notice the p-value of 1. which is much higher that the significance level of 0.05%. This means there is not enough evidence to reject the null hypothesis. The suspension coil's PSI result is statistically similar.
+* From the Lot1 and Lot2 t-tests, the p-values were 0.057% and 0.027% respectively. Each of these p-values are at or below the significance level. Therefore, for Lots 1 and 2 we will fail to reject the null hypotheses and state that the means of Lot1 and Lot2 and statistically similar to the population mean.
+* From the Lot3 t-test, the p-value is 8.246e-05 significantly smaller from the first two lot tests and the significance level of 0.05%. Lot3 is statisitically different from the population mean, therefore we will reject the null hypothesis.
