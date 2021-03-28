@@ -4,10 +4,13 @@
 I used R statistics tests to measure several variables and discover correlations and connections between MPG and PSI.
 
 ## Linear Regression to Predict MPG
-####Coefficients
+
+#### Coefficients
+
 ![linearR1](/images/LM.1.png)
 
-####Coefficients and Significance codes
+#### Coefficients and Significance codes
+
 ![linearR2](/images/lm_summary_stats.png)
 
 •	When we look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle length, and ground clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
@@ -24,13 +27,17 @@ I used R statistics tests to measure several variables and discover correlations
 
 ## T-Test on Suspension Coils
 
-![Population](/images/pop.ttest.png) ## Population
+### Population
+![Population](/images/pop.ttest.png)
 
-![Lot1](/images/lot1.ttest.png) ## Lot 1
+### Lot 1
+![Lot1](/images/lot1.ttest.png)
 
-![Lot2](/images/lot2.ttest.png) ## Lot 2
+### Lot 2
+![Lot2](/images/lot2.ttest.png)
 
-![Lot3](/images/lot3.ttest.png) ## Lot 3
+### Lot 3
+![Lot3](/images/lot3.ttest.png)
 
 Looking at all 4 p-values from each lot and the population it is simple to distinguish the outlier from out One Sample t-test.
 
