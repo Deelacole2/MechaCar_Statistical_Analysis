@@ -5,9 +5,9 @@ I used R statistics tests to measure several variables and discover correlations
 
 ## Linear Regression to Predict MPG
 Coefficients
-![linearR1](path)
+![linearR1](/images/LM.1.png)
 Coefficients and Significance codes
-![linearR2](path)
+![linearR2](/images/lm_summary_stats.png)
 
 •	When we look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle length, and ground clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
 •	The slope of our multiple linear regression model cannot be considered zero. The reason being is that our p-value which is 5.35e-11 is a lot smaller than our preset significance level of 0.05%. Therefore, the null hypothesis is rejected which means that the slope of our linear regression model is not zero.
@@ -15,18 +15,18 @@ Coefficients and Significance codes
 
 ## Summary Statistics on Suspension Coils
 
-![total_summary](path)
+![total_summary](/images/pop.summary.png)
 
-![lot_summary](path)
+![lot_summary](/images/lot_summary.png)
 
 * According to the Lot summary table that we have created there is one lot that that has not maintained the same level of consistency that has been dictated by our manufacturing plant. If we look at Lot 3, the variance is 170.3. The max alloawance for variance is 100. While something will been to be done to address the issue, the overall statistics (including all manufacturing lots) is well within the dictated guidelines.
 
 ## T-Test on Suspension Coils
 
-![Population](path)
-![Lot1](path)
-![Lot2](path)
-![Lot3](path)
+![Population](/images/pop.ttest.png)
+![Lot1](/images/lot1.ttest.png)
+![Lot2](/images/lot2.ttest.png)
+![Lot3](/images/lot3.ttest.png)
 
 Looking at all 4 p-values from each lot and the population it is simple to distinguish the outlier from out One Sample t-test.
 
