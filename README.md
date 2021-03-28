@@ -13,9 +13,9 @@ I used R statistics tests to measure several variables and discover correlations
 
 ![linearR2](/images/lm_summary_stats.png)
 
-•	When we look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle length, and ground clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
-•	The slope of our multiple linear regression model cannot be considered zero. The reason being is that our p-value which is 5.35e-11 is a lot smaller than our preset significance level of 0.05%. Therefore, the null hypothesis is rejected which means that the slope of our linear regression model is not zero.
-•	The multiple linear regression that we created does show us that relationships between mpg and a few of the variables do exist. Since the null was rejected for these stats, that means there is a correlation. I believe this linear regression model can act as way to predict mpg in relation to ground clearance and vehicle length. Those two variables can be modified to improve the mpg stats.
+  * When we look at the multiple linear regression model that was created based on the mpg, it showed that the variables/coefficients: the intercept, vehicle length, and ground clearance are all very unlikely to provide random amounts of variance. This is demonstrated by the 'Pr(>|t|) values and all three have significance of zero, please note the triple asterisks in the last column.
+ * The slope of our multiple linear regression model cannot be considered zero. The reason being is that our p-value which is 5.35e-11 is a lot smaller than our preset significance level of 0.05%. Therefore, the null hypothesis is rejected which means that the slope of our linear regression model is not zero.
+  * The multiple linear regression that we created does show us that relationships between mpg and a few of the variables do exist. Since the null was rejected for these stats, that means there is a correlation. I believe this linear regression model can act as way to predict mpg in relation to ground clearance and vehicle length. Those two variables can be modified to improve the mpg stats.
 
 ## Summary Statistics on Suspension Coils
 
