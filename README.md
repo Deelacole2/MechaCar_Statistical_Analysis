@@ -1,7 +1,9 @@
 # MechaCar_Statistical_Analysis
 
+## Summary
+I used R statistics tests to measure several variables and discover correlations and connections between MPG and PSI.
+
 ## Linear Regression to Predict MPG
-Short summary....
 Coefficients
 ![linearR1](path)
 Coefficients and Significance codes
@@ -31,3 +33,15 @@ Looking at all 4 p-values from each lot and the population it is simple to disti
 * From the Population t-test notice the p-value of 1. which is much higher that the significance level of 0.05%. This means there is not enough evidence to reject the null hypothesis. The suspension coil's PSI result is statistically similar.
 * From the Lot1 and Lot2 t-tests, the p-values were 0.057% and 0.027% respectively. Each of these p-values are at or below the significance level. Therefore, for Lots 1 and 2 we will fail to reject the null hypotheses and state that the means of Lot1 and Lot2 and statistically similar to the population mean.
 * From the Lot3 t-test, the p-value is 8.246e-05 significantly smaller from the first two lot tests and the significance level of 0.05%. Lot3 is statisitically different from the population mean, therefore we will reject the null hypothesis.
+
+## Study Design: MechaCar vs Competition
+
+* A test that would be useful would be one that looked at MechaCars metrics for highway and city fuel efficiency in realtion to horse power. I believe these metrics could be tested and it would give us insight into the correlations between these metrics and also how we stack up against the competition.
+
+*Null and Alternative Hypotheses*
+  - Null: There is no statistical difference between the means of city and hwy fuel efficiency values against horse power.
+  - Alternative: There is a statistical differnce between the means of city and hwy fuel efficiency values against horse power.
+
+The Multiple Linear regression test could be a possible test to use in this situation. All 3 variables are continuous and we use the p-value generated from these test to determine if a relationship exists and whether or not the correlation is positive or negative. The only data we need to run this test are the dataset and the variables we would like to compare. 
+
+lm(hp ~ city + hwy, data=MechaCar_df)
